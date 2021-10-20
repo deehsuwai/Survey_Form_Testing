@@ -1,0 +1,117 @@
+
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 id="title"><strong>Survey Form</strong></h1>
+    <div id="main-form">
+        <p id="description"><strong>Please Let write your information below: </strong></p>
+        <form id="survey-form" method="GET" action="/action_page.php">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name"><strong>* Name: </strong></label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="name"><strong>* Email: </strong></label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="age"><strong>* Age: </strong></label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Age">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="Currentpost"><strong>Which K-pop Boy Groups You like it?</strong></label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="currentPos" class="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option  value="student">EXO</option>
+                            <option value="job">Super Junior</option>
+                            <option value="learner">SHINEE</option>
+                            <option value="preferNo">NCT Dream</option>
+                            <option value="other">NCT 127</option>
+                            </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRating"><strong>* And then which other K-pop Girl Groups do you like?</strong></label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label>Girl Generation<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                        <li class="radio"><label>Red Velvet<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                        <li class="radio"><label>AEspa<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="most-like"><strong>What do you like most K-Pop Group in SM Entertainment: </strong></label>
+                </div>
+                <div class="rightTab">
+                    <select id="most-like" name="mostLike" class="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">EXO</option>
+                        <option value="projects">Super Junior</option>
+                        <option value="community">NCT Dream</option>
+                        <option value="openSource">NCT 127</option>
+                        <option value="openSource">Girl Generation</option>
+                        <option value="openSource">Red Velvet</option>
+                        <option value="openSource">AEspa</option>
+                        </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="preferences"><strong> K-Pop Group in other Entertainment</strong>.<br>(Check all that apply): </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">BIG BAND</label></li>
+                        <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">BTOB</li>
+                        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">GOT-7</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">VIXX</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">WINNER</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">SEVENTEEN</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">BLACK PINK</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">2NE1</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">TWICE</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">MAMAMOO</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">ITZY</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comments"><strong>Any Comments or Suggestions for another Kpop Group?</strong></label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <h2>Created by Nadi || 14 Oct 2021</h2>
+
+</body>
+
+</html>

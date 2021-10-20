@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+html,
+body {
+    background: #d87878;
+    text-align: center;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    min-width: 320px;
+    height: auto;
+}
+
+#main-form {
+    background: url(./images/ee9a1a595f3acfb53eeb750689fa5466.jpg);
+    background-size: cover;
+    background-position:center;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 60%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 35px;
+    color: white;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    color: white;
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.input-field {
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    
+}
+
+#userAge {
+    width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+    color: white;
+}
+
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background: rgb(199, 216, 45);
+    color: black;
+    font-size: 1.3rem;
+}
+
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 20px;
+}
+
+.radio,
+.checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 840px) {
+    .input-field {
+        width: 80%;
+    }
+    select {
+        width: 90%;
+    }
+    h2 {
+        background: rgb(56, 238, 65);
+        padding: 5px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .labels {
+        width: 100%;
+        text-align: left;
+    }
+    .rightTab {
+        width: 80%;
+        float: left;
+    }
+    .input-field {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
+    h2 {
+        font-size: 15px;
+        padding: 2px;
+    }
+}
